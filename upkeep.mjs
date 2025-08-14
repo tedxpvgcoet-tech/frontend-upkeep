@@ -24,5 +24,5 @@ while (Date.now() - startTime < duration) {
   const istNow = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
   console.log("☝️ Ping at", istNow);
   console.log("--------------------------");
-  await new Promise(resolve => setTimeout(resolve, 5 * 60 * 1000));
+  await new Promise(resolve => setTimeout(resolve, 1 * 60 * 1000));
 }
