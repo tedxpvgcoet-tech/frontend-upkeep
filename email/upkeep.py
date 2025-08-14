@@ -17,7 +17,7 @@ with open(filepath, 'r') as list:
 
 for recipient in recipients:
   try:
-    subject = "🚨 Backend Alert"
+    subject = "🚨 Frontend Alert"
     body = f"""
     <!DOCTYPE html>
     <html>
@@ -27,15 +27,15 @@ for recipient in recipients:
     </head>
     <body style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #fff3f3; padding: 20px;">
       <div style="max-width: 600px; margin: auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 20px; border-left: 6px solid #d11a2a;">
-        <h2 style="color: #d11a2a;">🚨 Backend Is Currently Offline</h2>
+        <h2 style="color: #d11a2a;">🚨 Frontend Is Currently Offline</h2>
         
         <p>Hi {recipient['name']},</p>
 
-        <p>We attempted to ping the backend at:</p>
+        <p>We attempted to ping the frontend at:</p>
 
         <p style="color: #d11a2a;"><strong>Status:</strong> ❌ Offline or unresponsive</p>
 
-        <p>This alert is sent because the backend did not respond as expected during our scheduled uptime check. Please investigate if the service is down or in sleep mode.</p>
+        <p>This alert is sent because the frontend did not respond as expected during our scheduled uptime check. Please investigate if the service is down or in sleep mode.</p>
 
         <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;" />
 
